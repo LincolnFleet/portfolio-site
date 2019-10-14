@@ -1,0 +1,19 @@
+.landingpage {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.background-image {
+    max-height: 100vh;
+    z-index: -1;
+}
+
+.name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+    .first {
+        color: 'rgba(028,028,032, 0.8';
+    }
+    .last {
+        color: 'rgba(255, 222, 089, 0.8)';
+    }
