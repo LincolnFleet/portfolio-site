@@ -1,13 +1,8 @@
-import React, {} from 'react';
-import './App.css'
-
+import React from 'react';
+import './App.css';
 import {
-  LandingPage
-} from './Bin-Pages';
-
-import {
-
-} from './Bin-Components';
+  LandingPage,
+} from './Bin-Pages.js';
 
 function App() {
   
