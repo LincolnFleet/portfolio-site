@@ -5,16 +5,9 @@ import {
 
 function temp() {
     return (
-        <div className='temp' style={styleObj.temp}>
+        <div className='temp'>
         </div>
     );
 };
 
 export default temp;
-
-// <-- CSS -->
-
-const styleObj={
-    'temp':{
-    },
-};
