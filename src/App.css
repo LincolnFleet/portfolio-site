@@ -1,11 +1,25 @@
+/* Site constants:
+    Main colors: 
+        black: rgba(008,008,022, 0.8)
+        yellow: rgba(255, 222, 089, 0.8)
+*/
+
 .App {
     min-width: 100vw;
     min-height: 100vh;
 
-    background-color: rgba(008,008,022, 0.8);
+    background-color: rgba(008,008,022, 0.9);
+}
 
+.content {
     display: grid;
     grid-template-rows: repeat(4, 100vh);
     grid-template-columns: 100vw;
-    gap: 10px;
-};
+    gap: 0;
+    grid-template-areas:
+    'landing'
+    'about'
+    'projects'
+    'blogs'
+    ;
+}

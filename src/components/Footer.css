@@ -1,0 +1,38 @@
+.footer {
+    margin-top: -5%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(008,008,022, 0.8);
+
+    height: 10vh;
+    width: 100vw;
+}
+
+.link-container {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 222, 089, 0.8);
+}
+
+.link-icon {
+    width: 2.5em;
+}
+
+.link-title {
+    width: 2.5em;
+}

@@ -3,11 +3,11 @@ import React, {} from 'react';
 import {
 } from '../Bin-Components.js';
 
-function temp() {
+function ProjectsPage() {
     return (
-        <div className='temp'>
+        <div className='projects-page'>
         </div>
     );
 };
 
-export default temp;
+export default ProjectsPage;
