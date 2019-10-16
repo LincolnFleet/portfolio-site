@@ -1,20 +1,76 @@
 .landingpage {
     min-width: 100vw;
     min-height: 100vh;
-    grid-area: 1/1/2/-1;
+    z-index: 1;
+    grid-area: landing;
 
     background: url(../assets/media/HeaderImage.jpg) no-repeat center center scroll;
     background-size: cover;
 
     display: grid;
-    grid: repeat(6, 1fr)/repeat(6, 1fr);
+    grid: repeat(12, 1fr)/repeat(12, 1fr);
+    grid-template-areas:
+    '. . . . . . . . . . . .'
+    '. . port port port . . . . . . .'
+    '. . port port port . . . . . . .'
+    '. . port port port . . . . . . .'
+    '. . port port port . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . first first first first . . . . . .'
+    '. . . . . . . last last last last .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    'ban ban ban ban ban ban ban ban ban ban ban ban'
+    'ban ban ban ban ban ban ban ban ban ban ban ban'
+    ;
+}
+
+.portrait {
+    height: 100%;
 }
 
 .name.first {
-    color: rgba(028,028,032, 0.8);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-area: first;
+    color: rgba(028,028,032, 0.9);
+    font-size: 18vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: flex-end;
+    align-items: flex-end;
 }
 .name.last {
-    color: rgba(255, 222, 089, 0.8);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+    grid-area: last;
+    color: rgba(255, 222, 089, 0.6);
+    font-size: 18vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.banner {
+    grid-area: ban;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.byline {
+    height: 5%;
+    width: 100vw;
+    padding: 5%;
+
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+
+    color: rgba(028,028,032, 0.9);
+    font-size: 1.3rem;
+    background-color: rgba(255, 222, 089, 0.6);
+    border-radius: 5%;
+}
