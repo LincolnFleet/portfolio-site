@@ -1,12 +1,10 @@
 .footer {
-    margin-top: -5%;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 
-    background-color: rgba(008,008,022, 0.8);
+    background-color: rgba(008,008,020, 0.8);
 
     height: 10vh;
     width: 100vw;
@@ -22,17 +20,19 @@
 }
 
 .link {
+    margin: 2.5%;
+
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     justify-content: center;
-    color: rgba(255, 222, 089, 0.8);
+    align-items: center;
+    color: rgba(255, 220, 090, 0.8);
 }
 
 .link-icon {
-    width: 2.5em;
+    height: 1.5em;
 }
 
 .link-title {
-    width: 2.5em;
+    width: 3em;
 }

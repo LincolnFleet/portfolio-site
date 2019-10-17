@@ -1,4 +1,5 @@
 import React, {} from 'react';
+import './BlogsPage.css';
 
 import {
 } from '../Bin-Components.js';
@@ -6,6 +7,9 @@ import {
 function BlogsPage() {
     return (
         <div className='blogs-page'>
+            <div className='blogs-title'>
+                <div className='title'>Blogs</div>
+            </div>
         </div>
     );
 };

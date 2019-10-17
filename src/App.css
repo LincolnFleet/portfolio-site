@@ -1,14 +1,15 @@
 /* Site constants:
     Main colors: 
-        black: rgba(008,008,022, 0.8)
-        yellow: rgba(255, 222, 089, 0.8)
+        background black: rgba(008,008,025, 0.8)
+        text/page background: rgba(025,025,035, 0.9);
+        yellow: rgba(255, 220, 090, 0.8)
 */
 
 .App {
     min-width: 100vw;
     min-height: 100vh;
 
-    background-color: rgba(008,008,022, 0.9);
+    background-color: rgba(008,008,010, 0.9);
 }
 
 .content {

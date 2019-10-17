@@ -3,5 +3,51 @@
 
     height: 100vh;
     width: 100vw;
-    z-index: 1;
+
+    background-color: rgba(025,025,035, 0.9);
+
+    display: grid;
+    grid: repeat(12, 1fr) / repeat(12, 1fr);
+    grid-template-areas: 
+    '. . . t t t t t t t t t' 
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    ;
+}
+
+.blogs-title {
+    grid-area: t;
+
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 1%;
+    background-image: radial-gradient(farthest-corner at left,
+     rgba(230,230,230,0.75) 5%, 
+     rgba(255, 222, 089, 0.7) 25%, 
+     rgba(025,025,035, 0.9) 85%
+    );
+    background-blend-mode: overlay;
+
+    /* border-top-right-radius: 70%; */
+    /* border-bottom-right-radius: 30%; */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.blogs-title .title {
+    padding: 8%;
+    font-size: 3rem;
+    color: rgba(025,025,035, 0.9);
 }
