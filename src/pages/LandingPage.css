@@ -14,9 +14,9 @@
     grid-template-areas:
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
-    '. . . . p p p p p . . .'
-    '. . . . p p p p p . . .'
-    '. . . . p p p p p . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
@@ -25,14 +25,6 @@
     'b b b b b b b b b b b b'
     'b b b b b b b b b b b b'
     ;
-}
-
-.landing-portrait {
-    grid-area: p;
-
-    width: 100%;
-    background-color: rgba(028,028,032, 0.7);
-    border-radius: 45%;
 }
 
 .landing-name.first {
