@@ -1,37 +1,36 @@
-.landingpage {
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: 1;
+.landing-page {
     grid-area: landing;
+    
+    width: 100vw;
+    height: 100vh;
 
     background: url(../assets/media/HeaderImage.jpg) no-repeat center center scroll;
     background-size: cover;
+    background-color: rgba(010, 010, 20, 0.2);
+    background-blend-mode: saturation;
 
     display: grid;
-    grid: repeat(12, 1fr)/repeat(12, 1fr);
+    grid: repeat(12, 1fr) / repeat(12, 1fr);
     grid-template-areas:
     '. . . . . . . . . . . .'
-    '. . port port port . . . . . . .'
-    '. . port port port . . . . . . .'
-    '. . port port port . . . . . . .'
-    '. . port port port . . . . . . .'
-    '. . . . . . . . . . . .'
-    '. . first first first first . . . . . .'
-    '. . . . . . . last last last last .'
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
-    'ban ban ban ban ban ban ban ban ban ban ban ban'
-    'ban ban ban ban ban ban ban ban ban ban ban ban'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . . . . . . . . . .'
+    '. . . f f f f f . . . .'
+    '. . . . . . l l l l l .'
+    'b b b b b b b b b b b b'
+    'b b b b b b b b b b b b'
     ;
 }
 
-.portrait {
-    height: 100%;
-}
+.landing-name.first {
+    grid-area: f;
 
-.name.first {
-    grid-area: first;
-    color: rgba(028,028,032, 0.9);
+    color: rgba(025,025,035, 0.9);
     font-size: 18vw;
 
     display: flex;
@@ -39,9 +38,11 @@
     justify-items: flex-end;
     align-items: flex-end;
 }
-.name.last {
-    grid-area: last;
-    color: rgba(255, 222, 089, 0.6);
+
+.landing-name.last {
+    grid-area: l;
+
+    color: rgba(255, 220, 090, 0.6);
     font-size: 18vw;
 
     display: flex;
@@ -50,17 +51,16 @@
     align-items: flex-start;
 }
 
-.banner {
-    grid-area: ban;
+.landing-banner {
+    grid-area: b;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-
 }
 
-.byline {
+.landing-byline {
     height: 5%;
     width: 100vw;
     padding: 5%;
@@ -68,9 +68,11 @@
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: center;
-
-    color: rgba(028,028,032, 0.9);
+    
     font-size: 1.3rem;
-    background-color: rgba(255, 222, 089, 0.6);
-    border-radius: 5%;
+    color: rgba(025,025,035, 0.9);
+
+    background-color: rgba(255, 220, 090, 0.4);
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
 }

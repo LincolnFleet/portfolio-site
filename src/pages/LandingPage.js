@@ -7,11 +7,12 @@ import {
 function LandingPage() {
     
     return (
-        <div className='landingpage'>
-            <span className='name first'>Travis</span>
-            <span className='name last'>Martin</span>
-            <div className='banner'>
-                <span className='byline'>Software Engineer, Full Stack Web Dev</span>
+        <div className='landing-page'>
+            <div className='landing-portrait'></div>
+            <span className='landing-name first'>Travis</span>
+            <span className='landing-name last'>Martin</span>
+            <div className='landing-banner'>
+                <span className='landing-byline'>Software Engineer, Full Stack Web Dev</span>
             </div>
         </div>
     );
