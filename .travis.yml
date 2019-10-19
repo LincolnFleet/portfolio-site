@@ -4,14 +4,15 @@ node_js:
 - '6'
 - '4'
 before_install:
-
+- echo "Build Phase, before_install..."
 install:
-
+- echo "Build Phase, install..."
 before_script:
-
+- echo "Build Phase, before_script..."
 script:
-
+- echo "Build Phase, script..."
 deploy:
+- echo "Build Phase, deploy..."
   provider: heroku
   api_key:
     secure: WMl/fL61Fnn8GmYjba0XRczhXyMZ6fyKbSTN8vw0+myZgAZ1XIjgV3pMXO7WoNev1AeILg+m0lRWmBb7AayrKSU43Kp0gS53rlr9MrP+4KyzQfjor6ekSq3Zwbn4Q/5mUmFEm1/jPgznP4jUyEvLuTLvxNcy1pJ7RR9JXp+Wbf3nkcMjRPAhLjFqfTVJw8nioibgAC76uCu9XmHScUtV04grGNTqoXIdz1p932lPjlfTZ76yiJrz/cxqe+uo6WpiAuJcIF3kMwhKlDR7QF08qiOjJi0aaw69eH7vi3xv+EA19ScZBD4wHGEi9o4rj+izIhLtUUqGaVIrVd4GzJgWnNpNpZbZW+4ptYmG5iej8j/fmp+tOieCMKIub9rKHzniI+kt7OLZn6qUIbytUSZ0/DKMiTl01FgVQLUJalr358r9SHIh8aS5gJ6ZwxIqmWDw8x+VTEU0dalXZfG9qsHyVs2y9r7/+Z1V3TLAKE1GFDU3t70gk6YS2CeaVJiPRZmM0XGxeM5ivphKW49pp+7yQ1e2BYV33gECKL4YkretkOeGjyZILGch/Wv1p1AxOmX69PZQDxfQxNtRktW8my4RsHrjcDfqYXw3xyI6IyvuHXXvYYBWQo4jEL49BAASCs72nQIcY+cF+y6oTShS6a7CPk0Datz3myOlOBmrB83SWic=
