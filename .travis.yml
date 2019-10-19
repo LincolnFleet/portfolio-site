@@ -3,6 +3,14 @@ node_js:
 - stable
 - '6'
 - '4'
+before_install:
+
+install:
+
+before_script:
+
+script:
+
 deploy:
   provider: heroku
   api_key:
