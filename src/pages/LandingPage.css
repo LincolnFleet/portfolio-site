@@ -4,7 +4,8 @@
     width: 100vw;
     height: 100vh;
 
-    background: url(../assets/media/HeaderImage.jpg) no-repeat center center scroll;
+    background: url(../assets/media/HeaderImage.jpg) no-repeat;
+    background-position: 74%;
     background-size: cover;
     background-color: rgba(010, 010, 20, 0.2);
     background-blend-mode: saturation;
@@ -19,9 +20,9 @@
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
-    '. . . . . . . . . . . .'
-    '. . . f f f f f . . . .'
+    '. . f f f f f . . . . .'
     '. . . . . . l l l l l .'
+    '. . . . . . . . . . . .'
     'b b b b b b b b b b b b'
     'b b b b b b b b b b b b'
     ;

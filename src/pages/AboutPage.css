@@ -63,21 +63,20 @@
     align-items: center;
 
     color: rgba(255,220,090, 0.4);
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .about-education {
     grid-area: e;
 
     display: grid;
-    gap: 5px;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
 
     margin: 2vw;
     color: rgba(255,220,090, 0.4);
 
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .about-education .item {
@@ -92,14 +91,13 @@
     grid-area: x;
 
     display: grid;
-    gap: 5px;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
 
     margin: 2vw;
     color: rgba(255,220,090, 0.4);
 
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .about-experience .item {
