@@ -1,7 +1,7 @@
 .projects-page {
     grid-area: projects;
 
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 
     background-color: rgba(025,025,035, 0.9);
@@ -11,9 +11,9 @@
     grid: repeat(12, 1fr) / repeat(12, 1fr);
     grid-template-areas: 
     '. . . t t t t t t t t t' 
+    '. . . g g g g g g g g g'
     '. . . . . . . . . . . .'
-    '. . . g g g g g g g g g'
-    '. . . g g g g g g g g g'
+    '. . . a a a d d d d d d'
     '. . . a a a d d d d d d'
     '. . . a a a d d d d d d'
     '. . . a a a d d d d d d'
@@ -56,17 +56,25 @@
 .projects-filter {
     grid-area: g;
 
+    margin: 1%;
+
     border: 2px dotted red;
 }
 
 .projects-accordion {
     grid-area: a;
 
+    margin: 1%;
+
     border: 2px dotted red;
 }
 
 .projects-display {
     grid-area: d;
+
+    display: grid;
+
+    margin: 1%;
 
     border: 2px dotted red;
 }
