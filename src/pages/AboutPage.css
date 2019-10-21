@@ -1,11 +1,10 @@
 .about-page {
     grid-area: about;
 
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 
-    background-color: rgba(025,025,035, 0.8);
-    background-size: cover;
+    background-color: rgba(025,025,035, 0.9);
 
     display: grid;
     grid: repeat(12, 1fr) / repeat(12, 1fr);

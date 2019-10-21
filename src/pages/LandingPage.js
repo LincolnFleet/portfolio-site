@@ -11,7 +11,7 @@ function LandingPage() {
             <div className='landing-portrait'></div>
             <span className='landing-name first'>Travis</span>
             <span className='landing-name last'>Martin</span>
-            <div className='landing-banner'>
+            <div className='landing-foot'>
                 <span className='landing-byline'>Software Engineer, Full Stack Web Dev</span>
             </div>
         </div>
