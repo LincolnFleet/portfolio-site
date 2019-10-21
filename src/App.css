@@ -9,13 +9,14 @@
     min-width: 100vw;
     min-height: 100vh;
 
-    background: rgba(008,008,010, 1.0);
+    /* background-image: url(./assets/media/darkstone-asphalt-texture-14-8-1024x683.jpg); */
+    background-color: rgba(008,008,010, 0.9);
 }
 
 .content {
     display: grid;
     grid-template-rows: repeat(4, 100vh);
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
     gap: 0;
     grid-template-areas:
     'landing'

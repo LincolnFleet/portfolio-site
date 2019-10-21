@@ -9,10 +9,12 @@ function LandingPage() {
     return (
         <div className='landing-page'>
             <div className='landing-portrait'></div>
-            <span className='landing-name first'>Travis</span>
-            <span className='landing-name last'>Martin</span>
+            <div className='landing-name'>
+                <div className='first'>Travis</div>
+                <div className='last'>Martin</div>
+            </div>
             <div className='landing-foot'>
-                <span className='landing-byline'>Software Engineer, Full Stack Web Dev</span>
+                <span className='byline'>Software Engineer, Full Stack Web Dev</span>
             </div>
         </div>
     );
