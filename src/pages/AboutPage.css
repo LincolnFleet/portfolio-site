@@ -63,7 +63,7 @@
     align-items: center;
 
     color: rgba(255,220,090, 0.4);
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .about-education {
@@ -77,7 +77,7 @@
     margin: 2vw;
     color: rgba(255,220,090, 0.4);
 
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .about-education .item {
@@ -99,7 +99,7 @@
     margin: 2vw;
     color: rgba(255,220,090, 0.4);
 
-    border: 5px dotted red;
+    border: 2px dotted red;
 }
 
 .about-experience .item {
