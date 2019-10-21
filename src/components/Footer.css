@@ -10,7 +10,7 @@
     width: 100vw;
 }
 
-.link-container {
+.footer .link-container {
     width: 100%;
 
     display: flex;
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.link {
+.footer .link {
     margin: 2.5%;
 
     display: flex;
@@ -29,10 +29,10 @@
     color: rgba(255, 220, 090, 0.8);
 }
 
-.link-icon {
+.footer .link-icon {
     height: 1.5em;
 }
 
-.link-title {
+.footer .link-title {
     width: 3em;
 }

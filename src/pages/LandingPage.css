@@ -5,9 +5,9 @@
     height: 100vh;
 
     background: url(../assets/media/HeaderImage.jpg) no-repeat;
-    background-position: 74%;
+    background-position: 76%;
     background-size: cover;
-    background-color: rgba(010, 010, 20, 0.1);
+    /* background-color: rgba(010, 010, 20, 0.1); */
     background-blend-mode: saturation;
 
     display: grid;
@@ -19,44 +19,53 @@
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
     '. . . . . . . . . . . .'
+    '. n n n n n n n n n n .'
+    '. n n n n n n n n n n .'
     '. . . . . . . . . . . .'
-    '. . f f f f f . . . . .'
-    '. . . . . . l l l l l .'
-    '. . . . . . . . . . . .'
+    'b b b b b b b b b b b b'
     'b b b b b b b b b b b b'
     'b b b b b b b b b b b b'
     ;
 }
 
-.landing-name.first {
-    grid-area: f;
-
-    color: rgba(025,025,035, 0.9);
-    font-size: 18vw;
+.landing-name {
+    grid-area: n;
 
     display: flex;
-    flex-flow: row nowrap;
-    justify-items: flex-end;
-    align-items: flex-end;
+    flex-flow: column nowrap;
+    
 }
 
-.landing-name.last {
-    grid-area: l;
+    .landing-name .first {
+        color: rgba(025,025,035, 0.9);
+        font-size: 18vw;
 
-    color: rgba(255, 220, 090, 0.6);
-    font-size: 18vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: flex-start;
-    align-items: flex-start;
-}
+    .landing-name .last {
+        color: rgba(255, 220, 090, 0.6);
+        font-size: 16vw;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
 
 .landing-foot {
     grid-area: b;
 
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(6, 1fr);
+    grid-template-areas: 
+        'b b b b b .'
+        '. . . . . .'
+        '. . . . . .'
+    ;
     justify-content: center;
     align-items: flex-start;
 
@@ -66,19 +75,21 @@
     )
 }
 
-.landing-byline {
-    height: 5%;
-    width: 100vw;
-    padding: 5%;
+    .landing-foot .byline {
+        grid-area: b;
 
-    display: flex;
-    flex-flow: row-reverse nowrap;
-    align-items: center;
-    
-    font-size: 1.3rem;
-    color: rgba(025,025,035, 0.9);
+        /* height: 5%; */
+        width: 100%;
+        padding: 4%;
 
-    background-color: rgba(255, 220, 090, 0.4);
-    border-top-right-radius: 2.5rem;
-    border-bottom-right-radius: 2.5rem;
-}
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        
+        font-size: 1.2rem;
+        color: rgba(025,025,035, 0.9);
+
+        background-color: rgba(255, 220, 090, 0.6);
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+    }
