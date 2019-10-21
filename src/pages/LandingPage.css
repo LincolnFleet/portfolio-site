@@ -7,7 +7,7 @@
     background: url(../assets/media/HeaderImage.jpg) no-repeat;
     background-position: 74%;
     background-size: cover;
-    background-color: rgba(010, 010, 20, 0.2);
+    background-color: rgba(010, 010, 20, 0.1);
     background-blend-mode: saturation;
 
     display: grid;
@@ -52,13 +52,18 @@
     align-items: flex-start;
 }
 
-.landing-banner {
+.landing-foot {
     grid-area: b;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+
+    background-image: linear-gradient(to bottom,
+        rgba(025,025,035, 0.0) 20%,
+        rgba(025,025,035, 1.0) 90%
+    )
 }
 
 .landing-byline {

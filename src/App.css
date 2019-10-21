@@ -1,6 +1,6 @@
 /* Site constants:
     Main colors: 
-        background black: rgba(008,008,025, 0.8)
+        background black: rgba(008,008,025, 1.0)
         text/page background: rgba(025,025,035, 0.9);
         yellow: rgba(255, 220, 090, 0.8)
 */
@@ -9,7 +9,7 @@
     min-width: 100vw;
     min-height: 100vh;
 
-    background-color: rgba(008,008,010, 1.0);
+    background: rgba(008,008,010, 1.0);
 }
 
 .content {
