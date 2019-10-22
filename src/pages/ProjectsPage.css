@@ -10,7 +10,7 @@
     display: grid;
     grid: repeat(12, 1fr) / repeat(12, 1fr);
     grid-template-areas: 
-    '. . . t t t t t t t t t' 
+    '. t t t t t t t t t t t' 
     '. . . g g g g g g g g g'
     '. . . . . . . . . . . .'
     '. . . a a a d d d d d d'
@@ -34,10 +34,10 @@
     align-items: center;
     
     padding: 1%;
-    background-image: radial-gradient(farthest-corner at left,
-     rgba(230,230,230,0.75) 5%, 
-     rgba(255, 220, 090, 0.7) 25%, 
-     rgba(025,025,030, 0.9) 85%
+    background-image: radial-gradient(farthest-corner at 30%,
+        rgba(230,230,230,0.75) 10%, 
+        rgba(255, 220, 090, 0.7) 25%, 
+        rgba(025,025,030, 0.8) 85%
     );
     background-blend-mode: overlay;
 
