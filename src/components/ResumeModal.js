@@ -16,7 +16,7 @@ export default function ResumeModal({isOpen, toggleOpen}) {
                                 <span aria-hidden='true'>&times;</span>
                             </button>
                         </div>
-                        <iframe src={resumeZebra} alt='printable resume' title='printable resume'/>
+                        <img src={resumeZebra} alt='printable resume' title='printable resume'/>
                     </div>
                     </div>
                 </React.Fragment>

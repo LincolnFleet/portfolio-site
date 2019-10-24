@@ -5,7 +5,6 @@ export default function useResumeModal() {
 
     function toggleOpen() {
         setIsOpen(!isOpen);
-        console.log('resume toggled', isOpen);
     };
 
     return (
