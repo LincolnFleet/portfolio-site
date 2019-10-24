@@ -71,12 +71,22 @@
     border: 2px dotted red;
 }
 
-.resume-modal-color {
+.resume-peacock-button {
     grid-area: c;
+
+    margin: 5%;
+    color: rgba(255, 220, 090, 0.7);
+    background-color: rgba(008,008,020, 1.0);
+    border-radius: 10%;
 }
 
-.resume-modal-print {
+.resume-zebra-button {
     grid-area: z;
+    
+    margin: 5%;
+    color: rgba(255, 220, 090, 0.7);
+    background-color: rgba(008,008,020, 1.0);
+    border-radius: 10%;
 }
 
 .about-skill {

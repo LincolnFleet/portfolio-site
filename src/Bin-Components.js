@@ -2,6 +2,8 @@ import AboutSkill               from './components/AboutSkill.js';
 import AboutEducation           from './components/AboutEducation.js';
 import AboutExperience          from './components/AboutExperience.js';
 
+import ResumeZebra              from './components/ResumeZebra.js';
+
 import ProjectsFilter           from './components/ProjectsFilter.js';
 import ProjectsAccordion        from './components/ProjectsAccordion.js';
 import ProjectsDisplay          from './components/ProjectsDisplay.js';
@@ -16,6 +18,7 @@ export {
     AboutSkill,
     AboutEducation,
     AboutExperience,
+    ResumeZebra,
     ProjectsFilter,
     ProjectsAccordion,
     ProjectsDisplay,
