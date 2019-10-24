@@ -5,17 +5,15 @@ import {
     AboutSkill,
     AboutEducation,
     AboutExperience,
-    ResumeZebra,
+    ResumeModal,
 } from '../Bin-Components.js';
 
 import {
-    useResumePeacockModal,
-    useResumeZebraModal,
+    useResumeModal,
 } from '../Bin-Hooks.js';
 
 export default function AboutPage() {
-    const {zebraIsOpen, setZebraIsOpen} = useResumeZebraModal();
-    const {peacockIsOpen, setPeacockIsOpen} = useResumePeacockModal();
+    const {isOpen, toggleOpen} = useResumeModal();
 
     return (
         <div className='about-page'>
@@ -25,9 +23,8 @@ export default function AboutPage() {
             <div className='about-portrait'>
                 (Stupid Face Head)
             </div>
-            <button className='resume-peacock-button' type='button'>peacock resume</button>
-            <button className='resume-zebra-button' type='button' onClick={setZebraIsOpen}>zebra resume</button>
-            <ResumeZebra zebraIsOpen={zebraIsOpen} toggleZebra={setZebraIsOpen}/>
+            <button className='resume-button' type='button' onClick={toggleOpen}>resume modal</button>
+            <ResumeModal isOpen={isOpen} toggleOpen={toggleOpen}/>
             <AboutSkill/>
             <AboutEducation/>
             <AboutExperience/>

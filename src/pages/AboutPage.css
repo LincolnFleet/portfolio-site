@@ -12,7 +12,7 @@
     grid-template-areas: 
     '. t t t t t t t t t t t'
     '. t t t t t t t t t t t'
-    '. . . p p p p . . c c .'
+    '. . . p p p p . . . . .'
     '. . . p p p p . . z z .'
     '. . s s s s s s s s s .'
     '. . e e e e e e e e e .'
@@ -71,18 +71,9 @@
     border: 2px dotted red;
 }
 
-.resume-peacock-button {
-    grid-area: c;
-
-    margin: 5%;
-    color: rgba(255, 220, 090, 0.7);
-    background-color: rgba(008,008,020, 1.0);
-    border-radius: 10%;
-}
-
-.resume-zebra-button {
+.resume-button {
     grid-area: z;
-    
+
     margin: 5%;
     color: rgba(255, 220, 090, 0.7);
     background-color: rgba(008,008,020, 1.0);

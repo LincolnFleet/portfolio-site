@@ -1,10 +1,8 @@
 import useScrollPosition        from './hooks/useScrollPosition.js';
 
-import useResumePeacockModal    from './hooks/useResumePeacockModal.js';
-import useResumeZebraModal      from './hooks/useResumeZebraModal.js';
+import useResumeModal      from './hooks/useResumeModal.js';
 
 export {
     useScrollPosition,
-    useResumePeacockModal,
-    useResumeZebraModal,
+    useResumeModal,
 };

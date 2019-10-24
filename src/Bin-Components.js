@@ -2,7 +2,7 @@ import AboutSkill               from './components/AboutSkill.js';
 import AboutEducation           from './components/AboutEducation.js';
 import AboutExperience          from './components/AboutExperience.js';
 
-import ResumeZebra              from './components/ResumeZebra.js';
+import ResumeModal              from './components/ResumeModal.js';
 
 import ProjectsFilter           from './components/ProjectsFilter.js';
 import ProjectsAccordion        from './components/ProjectsAccordion.js';
@@ -18,7 +18,7 @@ export {
     AboutSkill,
     AboutEducation,
     AboutExperience,
-    ResumeZebra,
+    ResumeModal,
     ProjectsFilter,
     ProjectsAccordion,
     ProjectsDisplay,
