@@ -12,21 +12,22 @@
     grid-template-areas: 
     '. t t t t t t t t t t t'
     '. t t t t t t t t t t t'
-    '. . . g g g g g g g g g'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
-    '. . . a a a d d d d d d'
+    '. . g g g g g g g g g .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
+    '. . d d d d d d d d d .'
     '. . . . . . . . . . . .'
     ;
 }
 
 .projects-title {
     grid-area: t;
+    height: 16vh;
 
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -48,7 +49,11 @@
 }
 
 .projects-title .title {
-    padding: 8%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: flex-end;
+    padding: 8vw;
     font-size: 3rem;
     color: rgba(025,025,035, 1.0);
 }
@@ -61,13 +66,13 @@
     border: 2px dotted red;
 }
 
-.projects-accordion {
+/* .projects-accordion {
     grid-area: a;
 
     margin: 1%;
 
     border: 2px dotted red;
-}
+} */
 
 .projects-display {
     grid-area: d;

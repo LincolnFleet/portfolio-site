@@ -25,11 +25,11 @@ function ProjectsPage() {
                 selectedTags={selectedTags}
                 setSelectedTags={setSelectedTags}
             />
-            <ProjectsAccordion
+            {/* <ProjectsAccordion
                 selectedTags={selectedTags}
                 selectedProject={selectedProject}
                 setSelectedProject={setSelectedProject}
-            />
+            /> */}
             <ProjectsDisplay
                 selectedProject={selectedProject}
             />

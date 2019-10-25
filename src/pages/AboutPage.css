@@ -27,7 +27,6 @@
 
 .about-title {
     grid-area: t;
-
     height: 16vh;
 
     display: flex;
@@ -61,7 +60,6 @@
 
 .about-portrait {
     grid-area: p;
-
     width: 100%;
 
     display: flex;
