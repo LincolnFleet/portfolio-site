@@ -78,6 +78,14 @@
     color: rgba(255, 220, 090, 0.7);
     background-color: rgba(008,008,020, 1.0);
     border-radius: 10%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration-line: none;
+    font-size: 0.75rem;
 }
 
 .about-skill {

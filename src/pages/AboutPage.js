@@ -1,5 +1,6 @@
 import React, {} from 'react';
 import './AboutPage.css';
+import zebraResume from '../assets/resume/Resume(bw).pdf';
 
 import {
     AboutSkill,
@@ -23,7 +24,8 @@ export default function AboutPage() {
             <div className='about-portrait'>
                 (Stupid Face Head)
             </div>
-            <button className='resume-button' type='button' onClick={toggleOpen}>resume modal</button>
+            <a className='resume-button' href={zebraResume} target='_blank'>Resume</a>
+            {/* <button className='resume-button' type='button' onClick={toggleOpen}>resume modal</button> */}
             <ResumeModal isOpen={isOpen} toggleOpen={toggleOpen}/>
             <AboutSkill/>
             <AboutEducation/>

@@ -2,10 +2,11 @@ import React, {useState, useRef} from 'react';
 import ReactDOM from 'react-dom';
 import './ResumeModal.css';
 
-import {usePdf} from 'react-pdf-js';
+import {usePdf} from 'react-pdf-js'; // https://www.npmjs.com/package/@mikecousins/react-pdf
+import zebraResume from '../assets/resume/Resume(bw).pdf';
 
 export default function ResumeModal({isOpen, toggleOpen}) {
-    const [resumeVersion, setResumeVersion] = useState('public/resume/Resume(bw).pdf');
+    const [resumeVersion, setResumeVersion] = useState(zebraResume);
 
     const canvasEl = useRef(null);
 
@@ -26,9 +27,9 @@ export default function ResumeModal({isOpen, toggleOpen}) {
                                 <span aria-hidden='true'>&times;</span>
                             </button>
                         </div>
-                        <div>
+                        <div className='resume-display'>
                             {loading && <span>Loading...</span>}
-                            <canvas ref={canvasEl} />
+                            <canvas className='resume-canvas' ref={canvasEl}/>
                         </div>
                     </div>
                     </div>
