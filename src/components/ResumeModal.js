@@ -1,9 +1,20 @@
-import React, {} from 'react';
+import React, {useState, useRef} from 'react';
 import ReactDOM from 'react-dom';
-import resumeZebra from '../assets/resume/Travis Martin - Resume (b&w).pdf';
 import './ResumeModal.css';
 
+import {usePdf} from 'react-pdf-js'; // https://www.npmjs.com/package/@mikecousins/react-pdf
+import zebraResume from '../assets/resume/Resume(bw).pdf';
+
 export default function ResumeModal({isOpen, toggleOpen}) {
+    const [resumeVersion, setResumeVersion] = useState(zebraResume);
+
+    const canvasEl = useRef(null);
+
+    const [loading] = usePdf({
+        file: resumeVersion,
+        canvasEl
+      });
+
     if (isOpen) {
         return (
             ReactDOM.createPortal(
@@ -16,7 +27,10 @@ export default function ResumeModal({isOpen, toggleOpen}) {
                                 <span aria-hidden='true'>&times;</span>
                             </button>
                         </div>
-                        <img src={resumeZebra} alt='printable resume' title='printable resume'/>
+                        <div className='resume-display'>
+                            {loading && <span>Loading...</span>}
+                            <canvas className='resume-canvas' ref={canvasEl}/>
+                        </div>
                     </div>
                     </div>
                 </React.Fragment>
