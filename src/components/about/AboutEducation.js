@@ -1,7 +1,7 @@
 import React, {} from 'react';
 
 import {
-} from '../Bin-Components.js';
+} from '../../Bin-Components.js';
 
 const allEdus = [
     {

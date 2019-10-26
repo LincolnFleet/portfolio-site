@@ -2,7 +2,7 @@ import React, {} from 'react';
 
 import {
     BlogsCarouselControls,
-} from '../Bin-Components.js';
+} from '../../Bin-Components.js';
 
 function BlogsCarousel() {
     return (

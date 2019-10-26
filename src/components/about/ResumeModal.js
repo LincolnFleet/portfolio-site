@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './ResumeModal.css';
 
 import {usePdf} from 'react-pdf-js'; // https://www.npmjs.com/package/@mikecousins/react-pdf
-import zebraResume from '../assets/resume/Resume(bw).pdf';
+import zebraResume from '../../assets/resume/Resume(bw).pdf';
 
 export default function ResumeModal({isOpen, toggleOpen}) {
     const [resumeVersion, setResumeVersion] = useState(zebraResume);
