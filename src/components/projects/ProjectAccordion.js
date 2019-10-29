@@ -28,7 +28,13 @@ function ProjectAccordion(props) {
                 <div className='tags'>
                     {props.tags.map(tech=><div className='tag'>{tech}</div>)}
                 </div>
-                <div className='video'>{props.video}</div>
+                <iframe className='video'
+                    src={props.video.URL}
+                    frameBorder='0'
+                    allow='autoplay; encrypted-media'
+                    allowFullScreen
+                    title={props.video.title}
+                />
                 <a className='deployed-link' href={props.deployedLink} target='_blank'>Open deployed version in new window (May take a moment to boot up!)</a>
                 <div className='description'>
                     {props.description.map(p=>{
