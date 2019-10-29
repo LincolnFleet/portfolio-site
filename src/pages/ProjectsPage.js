@@ -30,9 +30,9 @@ function ProjectsPage() {
                 selectedProject={selectedProject}
                 setSelectedProject={setSelectedProject}
             /> */}
-            <ProjectsDisplay
-                selectedProject={selectedProject}
-            />
+            <ProjectsDisplay selectedProject={selectedProject}>
+                <ProjectsAccordion/>
+            </ProjectsDisplay>
         </div>
     );
 };
