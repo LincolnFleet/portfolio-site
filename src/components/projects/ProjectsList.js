@@ -1,12 +1,24 @@
-export const ProjectsList = [
-    {
-        title: 'test title',
-        subTitle: 'test subtitle',
-        coCreators: ['test creator 1', 'test creator 2'],
-        date: 'test date',
-        tags: ['test tag1', 'test tag2', 'test tag3'],
-        deployedLinks: ['test deployed link 1', 'test deployed link 2'],
-        video: 'test video',
-        description: "test description: Lorem ipsum dolor amet shoreditch offal four dollar toast bespoke, vaporware crucifix yuccie craft beer iPhone. You probably haven't heard of them chillwave green juice, ethical vape brunch kogi artisan poke air plant celiac meh forage. Pour-over pitchfork wayfarers truffaut, slow-carb cray biodiesel yr cornhole la croix paleo 90's. Tilde wolf hexagon jianbing hella af franzen kogi offal godard cardigan art party air plant before they sold out.",
-    },
-]
+const js = 'JavaScript';
+const react = 'React';
+const redux = 'Redux';
+const ruby = 'Ruby';
+const ror = 'Ruby on Rails';
+const gresql = 'PostgreSQL'
+
+
+function ProjectsList() {
+    return [
+        {
+            title: 'DeckCheck',
+            subtitle: 'A deck building tool for the card game Magic: The Gathering',
+            creators: ['Travis Martin'],
+            date: '',
+            tags: [js, react, redux, ruby, ror, gresql],
+            deployedLink: 'http://www.google.com/',
+            video: 'test video',
+            description: ["Magic: The Gathering is a card game produced by Wizards of the Coast LLC in which players construct decks from a massive library of unique cards to form a (sometimes) coherent strategy to compete with other players. Players must keep card 'mana' costs, offensive and defensive tactics, chance-to-draw and adherence to an overall strategy in mind while building their deck, and deck building tools have become a near necessity for many who enjoy the game's competitive and creative nature.", "DeckCheck is a tool that queries Wizards of the Coast's database of over 400,000 card objects and allows authenticated users to search for cards, build, save and modify decks. This was my final project at the Flatiron School and its basic functionality and layout were written in about two weeks. It is built on a Ruby on Rails backend, OAuth for user credentials verification and a PostgreSQL database to store users and their decks. Views are rendered using React and Redux for state management. Requests to the card database are passed to and made by the server, and the return data is normalized as it enters the front-end store."],
+        },
+    ];
+};
+
+export default ProjectsList;

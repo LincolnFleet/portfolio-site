@@ -4,8 +4,9 @@ import AboutExperience          from './components/about/AboutExperience.js';
 import ResumeModal              from './components/about/ResumeModal.js';
 
 import ProjectsFilter           from './components/projects/ProjectsFilter.js';
-import ProjectsAccordion        from './components/projects/ProjectsAccordion.js';
-import ProjectsDisplay          from './components/projects/ProjectsDisplay.js';
+import ProjectAccordion         from './components/projects/ProjectAccordion.js';
+import ProjectsContainer        from './components/projects/ProjectsContainer.js';
+import ProjectsList             from './components/projects/ProjectsList.js';
 
 import BlogsCarousel            from './components/blogs/BlogsCarousel.js';
 import BlogsFocus               from './components/blogs/BlogsFocus.js';
@@ -19,8 +20,9 @@ export {
     AboutExperience,
     ResumeModal,
     ProjectsFilter,
-    ProjectsAccordion,
-    ProjectsDisplay,
+    ProjectAccordion,
+    ProjectsContainer,
+    ProjectsList,
     BlogsCarousel,
     BlogsFocus,
     BlogsCarouselControls,

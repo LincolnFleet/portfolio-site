@@ -3,8 +3,7 @@ import './ProjectsPage.css';
 
 import {
     ProjectsFilter,
-    ProjectsAccordion,
-    ProjectsDisplay,
+    ProjectsContainer,
 } from '../Bin-Components.js';
 
 function ProjectsPage() {
@@ -25,14 +24,7 @@ function ProjectsPage() {
                 selectedTags={selectedTags}
                 setSelectedTags={setSelectedTags}
             />
-            {/* <ProjectsAccordion
-                selectedTags={selectedTags}
-                selectedProject={selectedProject}
-                setSelectedProject={setSelectedProject}
-            /> */}
-            <ProjectsDisplay selectedProject={selectedProject}>
-                <ProjectsAccordion/>
-            </ProjectsDisplay>
+            <ProjectsContainer selectedProject={selectedProject}/>
         </div>
     );
 };

@@ -55,7 +55,7 @@
     justify-content: flex-end;
     padding: 8vw;
     font-size: 3rem;
-    color: rgba(025,025,035, 1.0);
+    color: rgba(025,025,030, 1.0);
 }
 
 .projects-filter {
@@ -66,20 +66,96 @@
     border: 2px dotted red;
 }
 
-/* .projects-accordion {
-    grid-area: a;
 
-    margin: 1%;
-
-    border: 2px dotted red;
-} */
-
-.projects-display {
+.projects-container {
     grid-area: d;
-
-    display: grid;
-
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
     margin: 1%;
-
-    border: 2px dotted red;
 }
+
+.project-accordion {
+        width: 100%;
+        padding: 2vw;
+
+        background-color: rgba(025,025,030, 1.0);
+        transition: background-color 0.4s ease;
+}
+
+.project-accordion:hover,
+.active {
+    background-color: rgba(008,008,025, 1.0);
+}
+    
+    .project-accordion .header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .project-accordion .header .title {
+            font-size: 1.50rem;
+        }
+
+        .project-accordion .header .subtitle {
+            font-size: 0.75rem;
+        }
+
+    .project-accordion .body {
+        display: grid;
+        gap: 2vw;
+        grid-template-areas: 
+        '. . . . . .'
+        'c c . t t t'
+        'c c . t t t'
+        '. v v v v .'
+        '. l l l l .'
+        'd d d d d d'
+        'd d d d d d'
+        ;
+
+        background-color: rgba(008,008,025, 1.0);
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+    }
+
+    .project-accordion .body .creators {
+        grid-area: c;
+        font-size: 0.75rem;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .project-accordion .body .tags {
+        grid-area: t;
+
+        justify-self: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 0.75rem;
+    }
+
+    .project-accordion .body .description {
+        grid-area: d;
+
+        font-size: 0.75rem;
+    }
+
+    .project-accordion .body .video {
+        grid-area: v;
+
+        align-self: center;
+        justify-self: center;
+    }
+
+    .project-accordion .body .deployed-link {
+        grid-area: l;
+
+        font-size: 0.75rem;
+    }
