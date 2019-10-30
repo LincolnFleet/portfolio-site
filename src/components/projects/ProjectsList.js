@@ -32,8 +32,8 @@ function ProjectsList() {
             tags: [js, react, redux, ruby, ror, gresql],
             deployedLink: 'http://www.google.com/',
             video: {
-                URL:'http://www.google.com',
-                title:''
+                URL:'https://www.youtube.com/embed/kPJz850ibII',
+                title:'THIS IS A TEST'
             },
             description: [
                 "Magic: The Gathering is a card game produced by Wizards of the Coast LLC in which players construct decks from a massive library of unique cards to form a (sometimes) coherent strategy to compete with other players. Players must keep card 'mana' costs, offensive and defensive tactics, chance-to-draw and adherence to an overall strategy in mind while building their deck, and deck building tools have become a near necessity for many who enjoy the game's competitive and creative nature.",
