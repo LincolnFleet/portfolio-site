@@ -24,7 +24,7 @@ export default function AboutPage() {
             <div className='about-portrait'>
                 (Stupid Face Head)
             </div>
-            <a className='resume-button' href={zebraResume} target='_blank'>Resume</a>
+            <a className='resume-button' href={zebraResume} target='_blank' rel='noopener'>Resume</a>
             {/* <button className='resume-button' type='button' onClick={toggleOpen}>resume modal</button> */}
             <ResumeModal isOpen={isOpen} toggleOpen={toggleOpen}/>
             <AboutSkill/>

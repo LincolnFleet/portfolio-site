@@ -36,7 +36,7 @@ function ProjectAccordion(props) {
                         allowFullScreen
                         title={props.video.title}
                         />
-                    <a className='deployed-link' href={props.deployedLink} target='_blank'>Open deployed version in new window (May take a moment to boot up!)</a>
+                    <a className='deployed-link' href={props.deployedLink} target='_blank' rel='noopener'>Open deployed version in new window (May take a moment to boot up!)</a>
                     <div className='description'>
                         {props.description.map(p=>{
                             return (<React.Fragment><br/><p className='segment'>{p}</p></React.Fragment>);
