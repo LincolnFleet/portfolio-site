@@ -7,24 +7,23 @@ import {
 } from '../Bin-Components.js';
 
 function ProjectsPage() {
-    const [selectedTags, setSelectedTags] = useState({
-        'javascript': true,
-        'ruby': true,
-        'rails': true,
-        'react': true,
-    })
-    const [selectedProject, setSelectedProject] = useState({'id': null})
+    // const [selectedTags, setSelectedTags] = useState({
+    //     'javascript': true,
+    //     'ruby': true,
+    //     'rails': true,
+    //     'react': true,
+    // })
 
     return (
         <div className='projects-page'>
             <div className='projects-title'>
                 <div className='title'>Projects</div>
             </div>
-            <ProjectsFilter
+            {/* <ProjectsFilter
                 selectedTags={selectedTags}
                 setSelectedTags={setSelectedTags}
-            />
-            <ProjectsContainer selectedProject={selectedProject}/>
+            /> */}
+            <ProjectsContainer/>
         </div>
     );
 };
