@@ -15,7 +15,7 @@ function ProjectAccordion(props) {
     };
 
     return (
-        <div className={`project-accordion ${isOpen}`} key={props.key}>
+        <div className='project-accordion' key={props.key}>
             <div className='header' onClick={toggleOpen}>
                 <div className='title'>{props.title}</div>
                 <div className='sub-title'>{props.subtitle}</div>
