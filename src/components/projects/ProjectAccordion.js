@@ -20,8 +20,8 @@ function ProjectAccordion(props) {
                 <div className='title'>{props.title}</div>
                 <div className='sub-title'>{props.subtitle}</div>
             </div>
-            <div className='body' ref={bodyRef} style={{maxHeight: `${bodyHeight}`}}>
-                <div className='start'/>
+            <div className={`body ${isOpen}`} ref={bodyRef} style={{maxHeight: `${bodyHeight}`}}>
+                <div className='start' onClick={toggleOpen}/>
                     <div className='creators'>
                         Created By:
                         {props.creators.map(name=><div className='creator'>{name}</div>)}
@@ -42,7 +42,7 @@ function ProjectAccordion(props) {
                             return (<React.Fragment><br/><p className='segment'>{p}</p></React.Fragment>);
                         })}
                     </div>
-                <div className='end'/>
+                <div className='end' onClick={toggleOpen}/>
             </div>
         </div>
     );
