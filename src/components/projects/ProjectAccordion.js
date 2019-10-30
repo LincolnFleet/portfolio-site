@@ -36,7 +36,15 @@ function ProjectAccordion(props) {
                         allowFullScreen
                         title={props.video.title}
                         />
-                    <a className='deployed-link' href={props.deployedLink} target='_blank' rel='noopener'>Open deployed version in new window (May take a moment to boot up!)</a>
+                    <div className='deployed-link'>
+                        <a className='link-button' href={props.deployedLink} target='_blank' rel='noopener'>Visit Deployed Version</a>
+                        <div>(May take a moment to boot up!)</div>
+                    </div>
+                    <div className='code-repo'>
+                        {props.codeRepo.only ? <a className='link-button' href={props.codeRepo.only} target='_blank' rel='noopener'>Github Repo</a> : null}
+                        {props.codeRepo.front ? <a className='link-button' href={props.codeRepo.front} target='_blank' rel='noopener'>Github Repo - Front End</a> : null}
+                        {props.codeRepo.back ? <a className='link-button' href={props.codeRepo.back} target='_blank' rel='noopener'>Github Repo - Back End</a> : null}
+                    </div>
                     <div className='description'>
                         {props.description.map(p=>{
                             return (<React.Fragment><br/><p className='segment'>{p}</p></React.Fragment>);

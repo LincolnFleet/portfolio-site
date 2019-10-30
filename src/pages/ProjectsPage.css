@@ -55,7 +55,7 @@
 
 
 .projects-container {
-    grid-column: 3/-2;
+    grid-column: 2/-2;
     grid-row: 4/-1;
     
     display: flex;
@@ -104,7 +104,7 @@
         'c c . t t t'
         'c c . t t t'
         'v v v v v v'
-        '. l l l l .'
+        'l l l r r r'
         'd d d d d d'
         'd d d d d d'
         'f f f f f f'
@@ -114,9 +114,9 @@
         transition: max-height 0.6s ease, background-color 0.8s ease;
     }
 
-    .project-accordion .body:hover, .active {
+    /* .project-accordion .body:hover, .active {
             background-color: rgba(008,008,025, 0.8);
-    }
+    } */
         
     .project-accordion .body .creators {
         grid-area: c;
@@ -152,7 +152,38 @@
     .project-accordion .body .deployed-link {
         grid-area: l;
 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
         font-size: 0.75rem;
+    }
+
+    .project-accordion .body .code-repo {
+        grid-area: r;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+        font-size: 0.75rem;
+    }
+
+    .project-accordion .body .link-button {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+
+        background-color: rgba(008,008,025, 1.0);
+        color: rgba(255, 220, 090, 0.7);
+        padding: 2vh;
+        border: 3px solid rgba(230,230,230,0.7);
+        border-radius: 10px;
+        margin: 1vh;
+        text-decoration: none;
     }
 
     .project-accordion .end {

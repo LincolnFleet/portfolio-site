@@ -19,6 +19,7 @@ function ProjectsContainer() {
                 tags={proj.tags}
                 deployedLink={proj.deployedLink}
                 video={proj.video}
+                codeRepo={proj.codeRepo}
                 description={proj.description}
             />)
         });
