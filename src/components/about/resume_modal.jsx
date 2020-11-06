@@ -7,13 +7,10 @@ import zebraResume from '../../assets/resume/Resume(bw).pdf';
 
 export default function ResumeModal({ isOpen, toggleOpen }) {
     const [resumeVersion, setResumeVersion] = useState(zebraResume);
+    const [isOpen, setIsOpen] = React.useState(false);
 
     const canvasEl = useRef(null);
-
-    const [loading] = usePdf({
-        file: resumeVersion,
-        canvasEl
-    });
+    const [loading] = usePdf({ file: resumeVersion, canvasEl });
 
     if (isOpen) {
         return (
