@@ -1,52 +1,85 @@
 import React, { useState, useRef } from 'react';
 
 function ProjectAccordion(props) {
+    const { 
+        video, 
+        description, 
+        deployedLink, 
+        codeRepo, 
+        tags, 
+        creators, 
+        key, 
+        title, 
+        subtitle, 
+    } = props;
+
     const [isOpen, setIsOpen] = useState(false);
-    const [bodyHeight, setBodyHeight] = useState('0px')
+    const [bodyHeight, setBodyHeight] = useState(0);
 
     const bodyRef = useRef(null);
 
-    function toggleOpen() {
-        setBodyHeight(isOpen==='active' ? '0px' : `${bodyRef.current.scrollHeight}px`)
-        setIsOpen(isOpen==='active' ? '' : 'active');
+    const toggleOpen = () => {
+        setBodyHeight(isOpen ? 0 : bodyRef.current.scrollHeight)
+        setIsOpen(!isOpen);
     };
 
     return (
-        <div className='project-accordion' key={props.key}>
+        <div className='project-accordion' key={key}>
             <div className='header' onClick={toggleOpen}>
-                <div className='title'>{props.title}</div>
-                <div className='sub-title'>{props.subtitle}</div>
+                <div className='title'>{title}</div>
+                <div className='sub-title'>{subtitle}</div>
             </div>
-            <div className={`body ${isOpen}`} ref={bodyRef} style={{maxHeight: `${bodyHeight}`}}>
+            <div className={['body', (isOpen && 'active')].join(' ')} 
+                ref={bodyRef} 
+                style={{maxHeight: `${bodyHeight}px`}}
+            >
                 <div className='start' onClick={toggleOpen}/>
                     <div className='creators'>
-                        Created By:
-                        {props.creators.map(name=><div className='creator'>{name}</div>)}
+                        {"Created By:"}
+                        { creators.map(name => <div className='creator'>{name}</div>) }
                     </div>
                     <div className='tags'>
-                        {props.tags.map(tech=><div className='tag'>{tech}</div>)}
+                        { tags.map(t => <div className='tag'>{t}</div>) }
                     </div>
-                    <iframe className='video'
-                        src={props.video.URL}
-                        frameBorder='0'
-                        allow='autoplay; encrypted-media'
-                        allowFullScreen
-                        title={props.video.title}
+                    { video && 
+                        <iframe className='video'
+                            src={video.URL}
+                            frameBorder='0'
+                            allow='autoplay; encrypted-media'
+                            allowFullScreen
+                            title={video.title}
                         />
-                    <div className='deployed-link'>
-                        <a className='link-button' href={props.deployedLink} target='_blank' rel='noopener'>Visit Deployed Version</a>
-                        <div>(May take a moment to boot up!)</div>
-                    </div>
+                    }
+                    { deployedLink && 
+                        <div className='deployed-link'>
+                            <a className='link-button' href={deployedLink} target='_blank' rel='noopener'>
+                                {"Visit Deployed Version"}
+                            </a>
+                            <div>{"(May take a moment to boot up!)"}</div>
+                        </div>
+                    }
                     <div className='code-repo'>
-                        {props.codeRepo.only ? <a className='link-button' href={props.codeRepo.only} target='_blank' rel='noopener'>Github Repo</a> : null}
-                        {props.codeRepo.front ? <a className='link-button' href={props.codeRepo.front} target='_blank' rel='noopener'>Github Repo - Front End</a> : null}
-                        {props.codeRepo.back ? <a className='link-button' href={props.codeRepo.back} target='_blank' rel='noopener'>Github Repo - Back End</a> : null}
+                        { codeRepo.only && 
+                            <a className='link-button' href={codeRepo.only} target='_blank' rel='noopener'>
+                                {"Github Repo"}
+                            </a>
+                        }
+                        { codeRepo.front && 
+                            <a className='link-button' href={codeRepo.front} target='_blank' rel='noopener'>
+                                {"Github Repo - Front End"}
+                            </a>
+                        }
+                        { codeRepo.back && 
+                            <a className='link-button' href={codeRepo.back} target='_blank' rel='noopener'>
+                                {"Github Repo - Back End"}
+                            </a>
+                        }
                     </div>
-                    <div className='description'>
-                        {props.description.map(p=>{
-                            return (<React.Fragment><br/><p className='segment'>{p}</p></React.Fragment>);
-                        })}
-                    </div>
+                    { description && 
+                        <div className='description'>
+                            { description.map(p => <p>{p}</p>) }
+                        </div>
+                    }
                 <div className='end' onClick={toggleOpen}/>
             </div>
         </div>

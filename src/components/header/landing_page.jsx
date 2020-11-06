@@ -1,7 +1,7 @@
 import React, { } from 'react';
 import './landing_page.css';
 
-import { useScrollPosition } from '../hooks/useScrollPosition.js';
+import { useScrollPosition } from '../../hooks/useScrollPosition.js';
 
 function LandingPage(props) {
 

@@ -5,9 +5,10 @@ import './resume_modal.css';
 import { usePdf } from 'react-pdf-js'; // https://www.npmjs.com/package/@mikecousins/react-pdf
 import zebraResume from '../../assets/resume/Resume(bw).pdf';
 
-export default function ResumeModal({ isOpen, toggleOpen }) {
+export default function ResumeModal(props) {
+    const { isOpen } = props;
+
     const [resumeVersion, setResumeVersion] = useState(zebraResume);
-    const [isOpen, setIsOpen] = React.useState(false);
 
     const canvasEl = useRef(null);
     const [loading] = usePdf({ file: resumeVersion, canvasEl });
