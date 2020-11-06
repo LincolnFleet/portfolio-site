@@ -1,9 +1,7 @@
 import React, {} from 'react';
 
-import {
-} from '../../Bin-Components.js';
+function ProjectsFilter(props) {
 
-function ProjectsFilter() {
     return (
         <div className='projects-filter'>
             (filter)

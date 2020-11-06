@@ -1,10 +1,7 @@
-import React, {useState, useRef} from 'react';
-
-import {
-} from '../../Bin-Components.js';
+import React, { useState, useRef } from 'react';
 
 function ProjectAccordion(props) {
-    const [isOpen, setIsOpen] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
     const [bodyHeight, setBodyHeight] = useState('0px')
 
     const bodyRef = useRef(null);

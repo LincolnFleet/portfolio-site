@@ -1,20 +1,16 @@
-import React, {} from 'react';
-import './AboutPage.css';
+import React, { } from 'react';
+import './about.css';
 import zebraResume from '../assets/resume/Resume(bw).pdf';
 
-import {
-    AboutSkill,
-    AboutEducation,
-    AboutExperience,
-    ResumeModal,
-} from '../Bin-Components.js';
+import Skills from './skills.jsx';
+import Education from './education.jsx';
+import Experience from './experience.jsx';
+import ResumeModal from './resume_modal.jsx';
 
-import {
-    useResumeModal,
-} from '../Bin-Hooks.js';
+import { useResumeModal } from '../../hooks/useResumeModal.js';
 
-export default function AboutPage() {
-    const {isOpen, toggleOpen} = useResumeModal();
+export default function AboutPage(props) {
+    const { isOpen, toggleOpen } = useResumeModal();
 
     return (
         <div className='about-page'>
@@ -26,10 +22,10 @@ export default function AboutPage() {
             </div>
             <a className='resume-button' href={zebraResume} target='_blank' rel='noopener'>Resume</a>
             {/* <button className='resume-button' type='button' onClick={toggleOpen}>resume modal</button> */}
-            <ResumeModal isOpen={isOpen} toggleOpen={toggleOpen}/>
-            <AboutSkill/>
-            <AboutEducation/>
-            <AboutExperience/>
+            <ResumeModal isOpen={isOpen} toggleOpen={toggleOpen} />
+            <Skills />
+            <Education />
+            <Experience />
         </div>
     );
 };

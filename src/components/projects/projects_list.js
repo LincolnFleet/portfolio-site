@@ -23,7 +23,7 @@ const react = 'React';
 const redux = 'Redux';
 const ruby = 'Ruby';
 const ror = 'Ruby on Rails';
-const gresql = 'PostgreSQL'
+const gresql = 'PostgreSQL';
 
 
 function ProjectsList() {

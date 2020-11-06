@@ -1,7 +1,4 @@
-import React, {} from 'react';
-
-import {
-} from '../../Bin-Components.js';
+import React, { } from 'react';
 
 const allEdus = [
     {
@@ -17,7 +14,7 @@ const allEdus = [
 ];
 
 function makeEduElems() {
-    return allEdus.map( (edu) =>{
+    return allEdus.map((edu) => {
         return (
             <div className='item'>
                 <div className='left'>
@@ -33,11 +30,12 @@ function makeEduElems() {
     });
 };
 
-const dividerSingle = ()=>{return <div style={{backgroundColor: 'rgba(255, 220, 090, 0.8)'}}/>};
+const dividerSingle = () => { return <div style={{ backgroundColor: 'rgba(255, 220, 090, 0.8)' }} /> };
 
-export default function AboutEducation() {
+export default function Education(props) {
+
     return (
-        <div className='about-education'>
+        <div className='education'>
             {makeEduElems()}
         </div>
     );

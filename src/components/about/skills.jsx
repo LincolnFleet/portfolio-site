@@ -1,7 +1,4 @@
-import React, {} from 'react';
-
-import {
-} from '../../Bin-Components.js';
+import React, { } from 'react';
 
 const allSkills = [
     '[PostgreSQL]',
@@ -13,16 +10,17 @@ const allSkills = [
 ];
 
 function makeSkillElems() {
-    return allSkills.map( (skill) =>{
+    return allSkills.map((skill) => {
         return (
             <span className='item'>{skill}</span>
         );
     });
 };
 
-export default function AboutSkill() {
+export default function Skills(props) {
+
     return (
-        <div className='about-skill'>
+        <div className='skills'>
             {makeSkillElems()}
         </div>
     );

@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
-import './ProjectsPage.css';
+import React, { useState } from 'react';
+import './projects.css';
 
-import {
-    ProjectsFilter,
-    ProjectsContainer,
-} from '../Bin-Components.js';
+import ProjectsFilter from './projects_filter.jsx';
+import ProjectsConainer from './projects_container.jsx';
 
-function ProjectsPage() {
+function ProjectsPage(props) {
     // const [selectedTags, setSelectedTags] = useState({
     //     'javascript': true,
     //     'ruby': true,
@@ -23,7 +21,7 @@ function ProjectsPage() {
                 selectedTags={selectedTags}
                 setSelectedTags={setSelectedTags}
             /> */}
-            <ProjectsContainer/>
+            <ProjectsContainer />
         </div>
     );
 };

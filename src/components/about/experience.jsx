@@ -1,7 +1,4 @@
-import React, {} from 'react';
-
-import {
-} from '../../Bin-Components.js';
+import React, { } from 'react';
 
 const allJobs = [
     {
@@ -31,7 +28,7 @@ const allJobs = [
 ];
 
 function makeJobElems() {
-    return allJobs.map( (job) =>{
+    return allJobs.map((job) => {
         return (
             <div className='item'>
                 <div className='left'>
@@ -49,11 +46,12 @@ function makeJobElems() {
     });
 };
 
-const dividerSingle = ()=>{return <div style={{backgroundColor: 'rgba(255, 220, 090, 0.8)'}}/>};
+const dividerSingle = () => { return <div style={{ backgroundColor: 'rgba(255, 220, 090, 0.8)' }} /> };
 
-export default function AboutExperience() {
+export default function Experience(props) {
+
     return (
-        <div className='about-experience'>
+        <div className='experience'>
             {makeJobElems()}
         </div>
     );

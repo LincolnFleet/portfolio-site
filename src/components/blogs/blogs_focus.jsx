@@ -1,9 +1,7 @@
-import React, {} from 'react';
+import React, { } from 'react';
 
-import {
-} from '../../Bin-Components.js';
+function BlogsFocus(props) {
 
-function BlogsFocus() {
     return (
         <div className='blogs-focus'>
             <h2>blog title</h2>

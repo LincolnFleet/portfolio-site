@@ -1,9 +1,8 @@
 import React, {} from 'react';
 
-import {
-} from '../Bin-Components.js';
+function temp(props) {
+    const { } = props;
 
-function temp() {
     return (
         <div className='temp'>
         </div>

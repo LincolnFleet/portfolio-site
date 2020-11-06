@@ -1,11 +1,10 @@
-import React, {} from 'react';
-import './LandingPage.css';
-import {useScrollPosition} from '../hooks/useScrollPosition.js';
-import {
-} from '../Bin-Components.js';
+import React, { } from 'react';
+import './landing_page.css';
 
-function LandingPage() {
-    
+import { useScrollPosition } from '../hooks/useScrollPosition.js';
+
+function LandingPage(props) {
+
     return (
         <div className='landing-page'>
             <div className='landing-portrait'></div>
