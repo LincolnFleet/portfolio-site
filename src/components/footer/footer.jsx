@@ -1,48 +1,21 @@
-import React, { useState } from 'react';
-import './footer.css';
+import React, { useState } from "react";
+import "./footer.css";
+import { LINKS } from "../../constants.js";
 
-import Github from '../assets/media/Github.png';
-import GithubOctocat from '../assets/media/Github-Octocat.png';
-import WordpressTitle from '../assets/media/wordpress-title.png';
-import WordpressIcon from '../assets/media/wordpress-icon.png';
-import LinkedinIcon from '../assets/media/LinkedIn-Icon.png';
-
-function Footer(props) {
-    const [linkObs, setlinkObs] = useState({
-        github: {
-            icon: GithubOctocat,
-            title: Github,
-            href: 'https://github.com/LincolnFleet'
-        },
-        wordpress: {
-            icon: WordpressIcon,
-            title: WordpressTitle,
-            href: 'https://wordpress.com/view/paralogyunbound.home.blog',
-        },
-        linkedin: {
-            icon: LinkedinIcon,
-            title: null,
-            href: 'https://www.linkedin.com/in/travisemartin/'
-        },
-    });
-
+export default function Footer(props) {
+  const linkElems = Object.keys(LINKS).map((linkName) => {
+    const linkData = LINKS[linkName];
     return (
-        <div className='footer'>
-            <div className='link-container'>
-                <a className='link' href={linkObs.github.href}>
-                    <img className='link-icon' src={linkObs.github.icon} alt='git hub icon' />
-                    <img className='link-title' src={linkObs.github.title} alt='git hub title' />
-                </a>
-                <a className='link' href={linkObs.linkedin.href}>
-                    <img className='link-icon' src={linkObs.linkedin.icon} alt='linked in icon' />
-                </a>
-                <a className='link' href={linkObs.wordpress.href}>
-                    <img className='link-icon' src={linkObs.wordpress.icon} alt='word press icon' />
-                    <img className='link-title' src={linkObs.wordpress.title} alt='word press title' />
-                </a>
-            </div>
-        </div>
+      <a className="link" href={linkData.href}>
+        <img className="link-icon" src={linkData.icon} />
+        <img className="link-title" src={linkData.title} />
+      </a>
     );
-};
+  });
 
-export default Footer;
+  return (
+    <div className="footer">
+      <div className="link-container">{linkElems}</div>
+    </div>
+  );
+}

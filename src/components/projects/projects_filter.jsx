@@ -1,12 +1,17 @@
-import React, {} from 'react';
+import React from "react";
 
-function ProjectsFilter(props) {
+export default function ProjectsFilter(props) {
+  const { selectedTags, setSelectedTags } = props;
 
-    return (
-        <div className='projects-filter'>
-            (filter)
-        </div>
-    );
-};
+  const handleOptionClick = React.useCallback(
+    (e) => {
+      const value = e.target.value;
+      selectedTags.includes(value)
+        ? setSelectedTags(selectedTags.filter((tag) => tag != value))
+        : setSelectedTags([...selectedTags, value]);
+    },
+    [selectedTags]
+  );
 
-export default ProjectsFilter;
+  return <div className="projects-filter">(**filter)</div>;
+}

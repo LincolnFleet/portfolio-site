@@ -1,38 +1,38 @@
 .footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 
-    background-color: rgba(008,008,020, 1.0);
+  background-color: rgba(008, 008, 020, 1);
 
-    height: 10vh;
-    width: 100vw;
+  height: 10vh;
+  width: 100vw;
 }
 
 .footer .link-container {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer .link {
-    margin: 2.5%;
+  margin: 2.5%;
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 220, 090, 0.8);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 220, 090, 0.8);
 }
 
 .footer .link-icon {
-    height: 1.5em;
+  height: 1.5em;
 }
 
 .footer .link-title {
-    width: 3em;
+  width: 3em;
 }

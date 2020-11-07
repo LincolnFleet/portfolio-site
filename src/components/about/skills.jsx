@@ -1,27 +1,12 @@
-import React, { } from 'react';
-
-const allSkills = [
-    '[PostgreSQL]',
-    '[Ruby]',
-    '[Ruby on Rails]',
-    '[JavaScript]',
-    '[React.js]',
-    '[Redux]',
-];
-
-function makeSkillElems() {
-    return allSkills.map((skill) => {
-        return (
-            <span className='item'>{skill}</span>
-        );
-    });
-};
+import React from "react";
+import { TAGS } from "../../constants.js";
 
 export default function Skills(props) {
-
-    return (
-        <div className='skills'>
-            {makeSkillElems()}
-        </div>
-    );
-};
+  return (
+    <div className="skills">
+      {Object.values(TAGS).map((skill) => {
+        return <span className="item">{skill}</span>;
+      })}
+    </div>
+  );
+}
