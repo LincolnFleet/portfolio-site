@@ -1,0 +1,85 @@
+.blogs-page {
+  grid-area: blogs;
+
+  min-height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(025, 025, 030, 1);
+  color: rgba(255, 220, 090, 0.7);
+
+  display: grid;
+  grid: repeat(12, 1fr) / repeat(12, 1fr);
+  grid-template-areas:
+    ". t t t t t t t t t t t"
+    ". t t t t t t t t t t t"
+    ". . c c c c c c c c c ."
+    ". . c c c c c c c c c ."
+    ". . c c c c c c c c c ."
+    ". . f f f f f f f f f ."
+    ". . f f f f f f f f f ."
+    ". . f f f f f f f f f ."
+    ". . f f f f f f f f f ."
+    ". . f f f f f f f f f ."
+    ". . f f f f f f f f f ."
+    ". . . . . . . . . . . .";
+}
+
+.blogs-title {
+  grid-area: t;
+
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1%;
+  background-image: radial-gradient(
+    farthest-corner at 30%,
+    rgba(230, 230, 230, 0.75) 10%,
+    rgba(255, 220, 090, 0.7) 25%,
+    rgba(025, 025, 030, 0.8) 85%
+  );
+  background-blend-mode: overlay;
+
+  /* border-top-right-radius: 70%; */
+  /* border-bottom-right-radius: 30%; */
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.blogs-title .title {
+  padding: 8%;
+  font-size: 3rem;
+  color: rgba(025, 025, 035, 1);
+}
+
+.blogs-carousel {
+  grid-area: c;
+  /* min-width: 100%; */
+  margin: 2%;
+
+  display: grid;
+  grid: 2fr 1fr / 1fr;
+  grid-template-areas:
+    "carousel"
+    "controls";
+  justify-items: center;
+
+  border: 2px dotted red;
+}
+
+.blogs-carousel.controls {
+  grid-area: controls;
+  /* min-width: 100%; */
+}
+
+.blogs-focus {
+  grid-area: f;
+  justify-items: center;
+  margin: 2%;
+
+  display: grid;
+  grid: 1fr 1fr 4fr / 1fr;
+
+  border: 2px dotted red;
+}
