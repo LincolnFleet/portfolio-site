@@ -4,6 +4,8 @@ import WordpressTitle from "../assets/media/wordpress-title.png";
 import WordpressIcon from "../assets/media/wordpress-icon.png";
 import LinkedinIcon from "../assets/media/LinkedIn-Icon.png";
 
+export const MY_NAME = "Travis Martin";
+
 export const TAGS = {
   js: "JavaScript",
   ruby: "Ruby",
