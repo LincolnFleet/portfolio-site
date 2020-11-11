@@ -1,5 +1,4 @@
-import { TAGS } from "../../constants.js";
-const { js, react, redux, ruby, ror, gresql, oauth } = TAGS;
+import { TAGS, MY_NAME } from "../../constants.js";
 
 // project Object shape:
 // {
@@ -21,13 +20,21 @@ const { js, react, redux, ruby, ror, gresql, oauth } = TAGS;
 //     description: [string,],
 // },
 
-const projectsList = [
+const PROJECTS_LIST = [
   {
     title: "DeckCheck",
     subtitle: "A deck building tool for the card game Magic: The Gathering",
-    creators: ["Travis Martin"],
+    creators: [MY_NAME],
     date: "",
-    tags: [js, react, redux, ruby, ror, gresql, oauth],
+    tags: [
+      TAGS.js,
+      TAGS.react,
+      TAGS.redux,
+      TAGS.ruby,
+      TAGS.ror,
+      TAGS.gresql,
+      TAGS.oauth,
+    ],
     deployedLink: "http://www.google.com/",
     video: {
       URL: "",
@@ -38,10 +45,10 @@ const projectsList = [
       back: "https://github.com/LincolnFleet/DeckCheck_back",
     },
     description: [
-      "Magic: The Gathering is a card game produced by Wizards of the Coast LLC in which players construct decks from a massive library of unique cards to form a (sometimes) coherent strategy and compete with other players. Players must keep card 'mana' costs, offensive and defensive tactics, chance-to-draw and adherence to an overall strategy in mind while building their deck, and deck building tools have become a near necessity for many who enjoy the game's competitive and creative nature.",
-      "DeckCheck is a tool that queries Wizards of the Coast's database of over 400,000 card objects and allows authenticated users to search for cards, build, save and modify decks. This was my final project at the Flatiron School and its basic functionality and layout were written in about two weeks. It is built on a Ruby on Rails backend, OAuth for user credentials verification and a PostgreSQL database to store users and their decks. Views are rendered using React and Redux for state management. Requests to the card database are passed to and made by the server, and the return data is normalized as it enters the front-end store.",
+      "Magic: The Gathering is a card game produced by Wizards of the Coast LLC in which players construct decks from a massive library of unique cards to form a (sometimes) coherent strategy and compete with other players.",
+      "DeckCheck is a tool that queries Wizards of the Coast's database of over 400,000 card objects and allows authenticated users to search for cards, build, save and modify decks. This was my final project at the Flatiron School and its basic functionality and layout were written in less than two weeks. It is built using a React+Redux frontend, a Ruby on Rails backend, OAuth for user credentials verification and a PostgreSQL database to store users and their decks. Requests to the card database are made by the server while data normalization is handled by the client.",
     ],
   },
 ];
 
-export default projectsList;
+export default PROJECTS_LIST;

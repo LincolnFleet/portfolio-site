@@ -1,17 +1,26 @@
 import React from "react";
+import { TAGS } from "../../constants.js";
 
-export default function ProjectsFilter(props) {
+module.exports = function ProjectsFilter(props) {
   const { selectedTags, setSelectedTags } = props;
 
   const handleOptionClick = React.useCallback(
     (e) => {
       const value = e.target.value;
       selectedTags.includes(value)
-        ? setSelectedTags(selectedTags.filter((tag) => tag != value))
+        ? setSelectedTags(selectedTags.filter((tag) => tag !== value))
         : setSelectedTags([...selectedTags, value]);
     },
-    [selectedTags]
+    [selectedTags, setSelectedTags]
   );
 
-  return <div className="projects-filter">(**filter)</div>;
-}
+  return (
+    <div className="projects-filter">
+      {TAGS.map((tag) => (
+        <div className={"filter-option"} onClick={handleOptionClick}>
+          {tag}
+        </div>
+      ))}
+    </div>
+  );
+};
