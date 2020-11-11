@@ -4,7 +4,7 @@ import projectsList from "./projects_list.js";
 import ProjectAccordion from "./project_accordion.jsx";
 
 export default function ProjectsContainer(props) {
-  const { selectedTags } = props;
+  const { selectedTags = [] } = props;
 
   const projectElems = projectsList.map((proj, i) => {
     if (
