@@ -8,7 +8,7 @@ export default function ProjectsContainer(props) {
 
   const projectElems = projectsList.map((proj, i) => {
     if (
-      selectedTags.length < 0 ||
+      selectedTags.length < 1 ||
       !selectedTags.some((tag) => proj.tags.includes(tag))
     ) {
       continue;
