@@ -1,19 +1,17 @@
 import React from "react";
-import projectsList from "./projects_list.js";
-
 import ProjectAccordion from "./project_accordion.jsx";
+
+const PROJECTS_LIST = require("./projects_list.js");
 
 export default function ProjectsContainer(props) {
   const { selectedTags = [] } = props;
 
-  const projectElems = projectsList.map((proj, i) => {
+  const projectElems = PROJECTS_LIST.reduce((acc, proj, i) => {
     if (
-      selectedTags.length < 1 ||
-      !selectedTags.some((tag) => proj.tags.includes(tag))
+      selectedTags.length > 0 &&
+      selectedTags.some((tag) => proj.tags.includes(tag))
     ) {
-      continue;
-    } else {
-      return (
+      acc.push(
         <ProjectAccordion
           key={i}
           title={proj.title}
@@ -28,7 +26,9 @@ export default function ProjectsContainer(props) {
         />
       );
     }
-  });
+
+    return acc;
+  }, []);
 
   return <div className="projects-container">{projectElems}</div>;
 }
