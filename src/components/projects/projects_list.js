@@ -1,5 +1,4 @@
 import { TAGS } from "../../constants.js";
-const { js, react, redux, ruby, ror, gresql, oauth } = TAGS;
 
 // project Object shape:
 // {
@@ -27,7 +26,7 @@ const projectsList = [
     subtitle: "A deck building tool for the card game Magic: The Gathering",
     creators: ["Travis Martin"],
     date: "",
-    tags: [js, react, redux, ruby, ror, gresql, oauth],
+    tags: [TAGS.js, TAGS.react, TAGS.redux, TAGS.ruby, TAGS.ror, TAGS.gresql],
     deployedLink: "http://www.google.com/",
     video: {
       URL: "",
