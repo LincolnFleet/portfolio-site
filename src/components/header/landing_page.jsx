@@ -1,6 +1,6 @@
 import React from "react";
 import "./landing_page.css";
-const { MY_NAME } = require("../../constants.js");
+const { TRAVIS_MARTIN } = require("../../constants.js");
 
 import { useScrollPosition } from "../../hooks/useScrollPosition.js";
 

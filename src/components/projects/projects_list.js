@@ -1,4 +1,4 @@
-import { TAGS, MY_NAME } from "../../constants.js";
+import { TAGS, TRAVIS_MARTIN } from "../../constants.js";
 
 // project Object shape:
 // {
@@ -24,7 +24,7 @@ const PROJECTS_LIST = [
   {
     title: "DeckCheck",
     subtitle: "A deck building tool for the card game Magic: The Gathering",
-    creators: [MY_NAME],
+    creators: [TRAVIS_MARTIN.join(" ")],
     date: "",
     tags: [
       TAGS.js,
