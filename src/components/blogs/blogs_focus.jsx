@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BlogsFocus(props) {
+function BlogsFocus(props) {
   return (
     <div className="blogs-focus">
       <h2>blog title</h2>
@@ -9,3 +9,5 @@ export default function BlogsFocus(props) {
     </div>
   );
 }
+
+module.exports = BlogsFocus;

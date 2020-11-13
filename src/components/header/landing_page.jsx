@@ -1,15 +1,16 @@
 import React from "react";
 import "./landing_page.css";
+const { TRAVIS_MARTIN } = require("../../constants.js");
 
 import { useScrollPosition } from "../../hooks/useScrollPosition.js";
 
-export default function LandingPage(props) {
+function LandingPage(props) {
   return (
     <div className="landing-page">
       <div className="landing-portrait"></div>
       <div className="landing-name">
-        <div className="first">Travis</div>
-        <div className="last">Martin</div>
+        <div className="first">{MY_NAME[0]}</div>
+        <div className="last">{MY_NAME[1]}</div>
       </div>
       <div className="landing-foot">
         <span className="byline">Software Engineer, Full Stack Web Dev</span>
@@ -17,3 +18,5 @@ export default function LandingPage(props) {
     </div>
   );
 }
+
+module.exports = LandingPage;

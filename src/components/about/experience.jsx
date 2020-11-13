@@ -3,7 +3,7 @@ import DividerSingle from "./divider_single.jsx";
 
 import { JOBS } from "./about_data.js";
 
-export default function Experience(props) {
+function Experience(props) {
   const jobElems = JOBS.map((job) => {
     return (
       <div className="item">
@@ -25,3 +25,5 @@ export default function Experience(props) {
 
   return <div className="experience">{jobElems}</div>;
 }
+
+module.exports = Experience;

@@ -5,8 +5,8 @@ import "./resume_modal.css";
 import { usePdf } from "react-pdf-js"; // https://www.npmjs.com/package/@mikecousins/react-pdf
 import zebraResume from "../../assets/resume/Resume(bw).pdf";
 
-export default function ResumeModal(props) {
-  const { isOpen } = props;
+function ResumeModal(props) {
+  const { isOpen, setIsOpen } = props;
 
   const [resumeVersion, setResumeVersion] = useState(zebraResume);
 
@@ -31,7 +31,7 @@ export default function ResumeModal(props) {
                 className="modal-close-button"
                 data-dismiss="modal"
                 aria-label="Close"
-                onClick={toggleOpen}
+                onClick={() => setIsOpen(!isOpen)}
               >
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -49,3 +49,5 @@ export default function ResumeModal(props) {
     return null;
   }
 }
+
+module.exports = ResumeModal;

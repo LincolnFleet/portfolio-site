@@ -1,7 +1,7 @@
 import React from "react";
 import { TAGS } from "../../constants.js";
 
-module.exports = function ProjectsFilter(props) {
+function ProjectsFilter(props) {
   const { selectedTags, setSelectedTags } = props;
 
   const handleOptionClick = React.useCallback(
@@ -23,4 +23,6 @@ module.exports = function ProjectsFilter(props) {
       ))}
     </div>
   );
-};
+}
+
+module.exports = ProjectsFilter;
