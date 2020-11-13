@@ -4,7 +4,7 @@ import "./projects.css";
 import ProjectsFilter from "./projects_filter.jsx";
 import ProjectsContainer from "./projects_container.jsx";
 
-export default function ProjectsPage(props) {
+function ProjectsPage(props) {
   const [selectedTags, setSelectedTags] = useState([]);
 
   return (
@@ -20,3 +20,5 @@ export default function ProjectsPage(props) {
     </div>
   );
 }
+
+module.exports = ProjectsPage;

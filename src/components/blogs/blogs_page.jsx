@@ -4,7 +4,7 @@ import "./blogs.css";
 import BlogsCarousel from "./blogs_carousel.jsx";
 import BlogsFocus from "./blogs_focus.jsx";
 
-export default function BlogsPage(props) {
+function BlogsPage(props) {
   return (
     <div className="blogs-page">
       <div className="blogs-title">
@@ -15,3 +15,5 @@ export default function BlogsPage(props) {
     </div>
   );
 }
+
+module.exports = BlogsPage;

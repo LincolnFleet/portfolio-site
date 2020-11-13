@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-export default function ProjectAccordion(props) {
+function ProjectAccordion(props) {
   const {
     video = {},
     description = [],
@@ -59,7 +59,7 @@ export default function ProjectAccordion(props) {
               className="link-button"
               href={deployedLink}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               {"Visit Deployed Version"}
             </a>
@@ -72,7 +72,7 @@ export default function ProjectAccordion(props) {
               className="link-button"
               href={codeRepo.only}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               {"Github Repo"}
             </a>
@@ -82,7 +82,7 @@ export default function ProjectAccordion(props) {
               className="link-button"
               href={codeRepo.front}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               {"Github Repo - Front End"}
             </a>
@@ -92,7 +92,7 @@ export default function ProjectAccordion(props) {
               className="link-button"
               href={codeRepo.back}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               {"Github Repo - Back End"}
             </a>
@@ -110,3 +110,5 @@ export default function ProjectAccordion(props) {
     </div>
   );
 }
+
+module.exports = ProjectAccordion;

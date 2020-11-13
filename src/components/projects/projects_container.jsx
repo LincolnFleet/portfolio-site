@@ -3,7 +3,7 @@ import ProjectAccordion from "./project_accordion.jsx";
 
 const PROJECTS_LIST = require("./projects_list.js");
 
-export default function ProjectsContainer(props) {
+function ProjectsContainer(props) {
   const { selectedTags = [] } = props;
 
   const projectElems = PROJECTS_LIST.reduce((acc, proj, i) => {
@@ -32,3 +32,5 @@ export default function ProjectsContainer(props) {
 
   return <div className="projects-container">{projectElems}</div>;
 }
+
+module.exports = ProjectsContainer;

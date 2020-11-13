@@ -1,7 +1,7 @@
 import React from "react";
 import { TAGS } from "../../constants.js";
 
-export default function Skills(props) {
+function Skills(props) {
   return (
     <div className="skills">
       {Object.values(TAGS).map((skill) => {
@@ -10,3 +10,5 @@ export default function Skills(props) {
     </div>
   );
 }
+
+module.exports = Skills;

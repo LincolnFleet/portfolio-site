@@ -2,7 +2,7 @@ import React from "react";
 
 import BlogsCarouselControls from "./blogs_carousel_controls.jsx";
 
-export default function BlogsCarousel(props) {
+function BlogsCarousel(props) {
   return (
     <div className="blogs-carousel">
       (carousel)
@@ -10,3 +10,5 @@ export default function BlogsCarousel(props) {
     </div>
   );
 }
+
+module.exports = BlogsCarousel;

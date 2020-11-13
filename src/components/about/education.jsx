@@ -3,7 +3,7 @@ import DividerSingle from "./divider_single.jsx";
 
 import { EDUCATION } from "./about_data.js";
 
-export default function Education(props) {
+function Education(props) {
   const eduElems = EDUCATION.map((edu) => {
     return (
       <div className="item">
@@ -21,3 +21,5 @@ export default function Education(props) {
 
   return <div className="education">{eduElems}</div>;
 }
+
+module.exports = Education;

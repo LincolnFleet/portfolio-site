@@ -9,7 +9,7 @@ import ResumeModal from "./resume_modal.jsx";
 
 import { useResumeModal } from "../../hooks/useResumeModal.js";
 
-export default function AboutPage(props) {
+function AboutPage(props) {
   const { isOpen, toggleOpen } = useResumeModal();
 
   return (
@@ -34,3 +34,5 @@ export default function AboutPage(props) {
     </div>
   );
 }
+
+module.exports = AboutPage;
