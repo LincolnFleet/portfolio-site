@@ -1,0 +1,17 @@
+version: '3.8'
+
+volumes:
+  node-cache:
+  npm-cache:
+
+services:
+  portfolio-site:
+    image: node:16
+    working_dir: /portfolio-site
+    ports:
+      - '8000:8000'
+      - '8002:8002'
+    volumes:
+      - .:/portfolio-site
+      - node-cache:/root/.cache
+      - npm-cache:/root/.npm
