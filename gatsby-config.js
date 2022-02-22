@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-	title: `Travis Martin - Portfolio`,
+		title: `Travis Martin - Dev Portfolio`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
