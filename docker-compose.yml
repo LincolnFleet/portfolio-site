@@ -13,5 +13,8 @@ services:
       - '8002:8002'
     volumes:
       - .:/portfolio-site
+      # - type: bind
+      #   source: $HOST/mnt/c/dev/repos/portfolio-site
+      #   target: /portfolio-site
       - node-cache:/root/.cache
       - npm-cache:/root/.npm
