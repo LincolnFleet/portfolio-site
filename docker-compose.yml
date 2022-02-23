@@ -7,14 +7,14 @@ volumes:
 services:
   portfolio-site:
     image: node:16
-    working_dir: /portfolio-site
+    working_dir: /app/portfolio-site
     ports:
       - '8000:8000'
       - '8002:8002'
     volumes:
-      - .:/portfolio-site
+      - .:/app/portfolio-site
       # - type: bind
       #   source: $HOST/mnt/c/dev/repos/portfolio-site
-      #   target: /portfolio-site
+      #   target: /app/portfolio-site
       - node-cache:/root/.cache
       - npm-cache:/root/.npm

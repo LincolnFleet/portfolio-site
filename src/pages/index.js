@@ -1,12 +1,11 @@
 import * as React from 'react';
 import "./index.css";
+import "./app.module.css";
 
 const App = () => {
 	return (
 		<main>
-			<title>
-				Travis' Portfolio Site
-			</title>
+			<header>Travis' Portfolio Site</header>
 		</main>
 	);
 }
