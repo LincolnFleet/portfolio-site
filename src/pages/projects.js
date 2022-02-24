@@ -1,4 +1,4 @@
-import { } from 'react';
+import * as React from 'react';
 
 const Projects = () => {
 	return (

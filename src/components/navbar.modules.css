@@ -1,0 +1,23 @@
+.navbar {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1em;
+	
+	flex-flow: row nowrap;
+	bottom: 0;
+	width: 100%;
+
+	@media screen and (min-width: 800px) {
+		flex-flow: column nowrap;
+		top: 0;
+		right: 0;
+		max-width: 20%;
+	}
+}
+
+button {
+	background-color: goldenrod;
+	transition: all 0.3s ease-in-out;
+}

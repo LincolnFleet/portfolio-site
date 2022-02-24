@@ -1,0 +1,9 @@
+.app {
+	display: flex;
+	color: black;
+	background-color: var(--background-color-primary);
+}
+
+header {
+	font-size: 16vw;
+}
